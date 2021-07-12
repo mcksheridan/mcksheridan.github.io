@@ -1,3 +1,73 @@
-body {
-  background-color: tomato;
+/* Fonts, icons */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.nav {
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+@media (min-height: 15.5rem) {
+  .nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 14.5rem;
+    margin-top: -7.25rem;
+    width: 100%;
+  }
+}
+@media (min-height: 550px) {
+  .nav {
+    height: 19.5rem;
+    margin-top: -9.75rem;
+  }
+}
+.nav__title {
+  font-size: 3.5rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+@media (min-height: 550px) {
+  .nav__title {
+    padding-bottom: 2.5rem;
+  }
+}
+.nav__link {
+  background-color: #fff;
+  color: #000;
+  font-size: 5rem;
+  padding: 0;
+  text-align: center;
+}
+@media (min-height: 550px) {
+  .nav__link {
+    padding: 2.5rem;
+  }
+}
+.nav__link:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+}
+.nav__link:hover {
+  background-color: #f6df08;
+  color: #000;
+}
+.nav__link:active {
+  color: #fff;
+  background-color: #444;
+}
+
+.material-icons {
+  display: none;
+  font-size: 4.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 30rem) {
+  .material-icons {
+    display: inline;
+  }
 }
